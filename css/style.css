@@ -1,0 +1,44 @@
+.Gradient {
+  background: #50cc47;
+  background: linear-gradient(
+    180deg,
+    rgba(80, 204, 71, 1) 0%,
+    rgba(80, 204, 71, 1) 16%,
+    rgba(80, 204, 71, 0.04) 35%,
+    rgba(80, 204, 71, 0) 46%
+  );
+}
+
+.Toggles {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(240, 255, 255, 0.45);
+    border-radius: 30px;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavElement {
+    gap: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    column-gap: 5px;
+    border: 1px, black;
+    background-color: rgba(240, 255, 255, 0.45);
+}
+
+.NavElement p {
+    margin: 0;
+}
+
+.NavElement img {
+    width: 25px;
+}
+
+@media screen and (max-width: 440px) {
+}
