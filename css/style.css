@@ -9,15 +9,6 @@
     );
 }
 
-.Toggles {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(240, 255, 255, 0.45);
-    border-radius: 30px;
-    height: 3.5%;
-}
 
 
 .NavBar {
@@ -25,7 +16,7 @@
   justify-content: space-between;
 }
 
-.NavElement {
+.Pro {
     gap: 5px;
     padding: 3px;
     height: 30px;
@@ -36,6 +27,13 @@
     border-radius: 20px;
     border: 1px, black;
     background-color: rgba(240, 255, 255, 0.45);
+}
+.Pro img {
+    width: 16px;
+    object-fit: contain;
+}
+.Pro p {
+    font-size: 13px;
 }
 
 .BellIcon {
@@ -50,37 +48,66 @@
     background-color: rgba(240, 255, 255, 0.45);
 }
 
-.History {
+.BellIcon img {
+    width: 16px;
+    object-fit: contain;
+}
+
+.Toggles {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.45);
+    border-radius: 30px;
+    height: 3.5%;
+}
+
+.History, .Favorites {
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
+    flex-grow: 1;
+}
+
+.Favorites img, .History img { 
+    object-fit: contain;
+    width: 12px;
+}
+
+.Favorites p, .History p { 
+    font-weight: 500;
+}
+
+.History {
     background-color: aliceblue;
     border-radius: 30px;
-    flex-grow: 1;
+}
+
+.YummyPicture {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.YummyPicture img {
+    object-fit: contain;
+    width: 100%;
 }
 
 .Barcode {
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
-    border-radius: 10%;
-    position: relative;
-    margin-top: -100px;
+    margin-top: -120px;
     z-index: 2;
-    width: 40%;
-    padding-top: 4px;
-    padding-bottom: 4px;
 }
 
-.Favorites {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    gap: 3px;
-    flex-grow: 1;
+.Barcode img {
+    width: 170px;
+    object-fit: contain;
 }
 
 .InfoBox {
@@ -95,6 +122,11 @@
     flex-direction: column;
     align-items: center;
     width: 70%;
+}
+
+.Info p {
+    margin-top: -10px;
+    text-align: center;
 }
 
 .CardContainer {
@@ -131,43 +163,16 @@
     font-size: 10px;
 }
 
-.info p {
-    margin-top: -10px;
-    text-align: center;
-}
-
-.Favorites img, .History img { 
-    object-fit: contain;
-    width: 12px;
-}
-
-.Favorites p, .History p { 
-    font-weight: 500;
-}
-.NavElement img {
-    width: 16px;
-    object-fit: contain;
-}
-
-.NavElement p {
-    font-size: 13px;
-}
-
-.BellIcon img {
-    width: 16px;
-    object-fit: contain;
-}
-
-.YummyPicture {
-    margin-top: 30px;
+.ProductInfo {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.YummyPicture img {
-    object-fit: contain;
-    width: 100%;
+.ProductBox {
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(240, 255, 255, 0.45);
 }
 
 .ScanBox {
@@ -192,37 +197,6 @@
 }
 
 
-/* Source: https://css-shape.com/corner-only/ */
-/* Jeg hadde tenkt å bare ta skjermbilde av barcoden */
-.Barcode img {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 60px;
-    width: 80px;
-    --s: 20px; /* size of the corners */
-    border: 3px, rgb(46, 139, 87), solid;
-    border-radius: 10px;
-    background: #f2f2f2 content-box;
-    mask: 
-        conic-gradient(#000 0 0) content-box,
-        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 
-        0 0/calc(100% - var(--s)) calc(100% - var(--s));
-}
-
-/* After er bra når du skal adde styling til et element uten å lage en HTML element */
-.Barcode::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: rgb(46, 139, 87);
-  transform: translateY(-50%);
-  transform-origin: center;
-  pointer-events: none; 
-}
 
 p {
   font-family: "Libre Franklin";
