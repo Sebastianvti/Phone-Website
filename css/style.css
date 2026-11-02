@@ -13,6 +13,7 @@
     margin-top: 14px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgba(240, 255, 255, 0.45);
     border-radius: 30px;
     height: 3.5%;
@@ -27,15 +28,30 @@
 .NavElement {
     gap: 5px;
     padding: 3px;
+    height: 30px;
+    width: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
-    column-gap: 5px;
+    border: 1px, black;
+    background-color: rgba(240, 255, 255, 0.45);
+}
+
+.BellIcon {
+    gap: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
     border: 1px, black;
     background-color: rgba(240, 255, 255, 0.45);
 }
 
 .History {
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +78,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90%;
     gap: 3px;
     flex-grow: 1;
 }
 
 .InfoBox {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,19 +94,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 70%;
 }
 
-.NavElement p {
+.CardContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Card img {
+    width: 30px;
+    object-fit: contain;
+}
+
+.Card h3 {
+    font-size: 12px;
     margin: 0;
+}
+
+.Card p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.info p {
+    margin-top: -10px;
+    text-align: center;
 }
 
 .Favorites img, .History img { 
     object-fit: contain;
     width: 12px;
 }
+
+.Favorites p, .History p { 
+    font-weight: 500;
+}
 .NavElement img {
-    width: 25px;
+    width: 16px;
+    object-fit: contain;
+}
+
+.NavElement p {
+    font-size: 13px;
+}
+
+.BellIcon img {
+    width: 16px;
+    object-fit: contain;
 }
 
 .YummyPicture {
@@ -102,6 +169,28 @@
     object-fit: contain;
     width: 100%;
 }
+
+.ScanBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 53%;
+    background-color: #50cc47;
+    border-radius: 20px;
+    height: 35px;
+}
+
+.ScanBox p {
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.ScanBox img {
+    object-fit: contain;
+    width: 17px;
+}
+
 
 /* Source: https://css-shape.com/corner-only/ */
 /* Jeg hadde tenkt å bare ta skjermbilde av barcoden */
@@ -135,6 +224,21 @@
   pointer-events: none; 
 }
 
+p {
+  font-family: "Libre Franklin";
+}
 
+h3,h4 {
+    font-family: "Libre Franklin";
+    font-weight: 700;
+}
 @media screen and (max-width: 440px) {
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../font/LibreFranklin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
