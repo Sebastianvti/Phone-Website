@@ -10,7 +10,7 @@
 }
 
 .Toggles {
-    margin-top: 14px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,7 +84,7 @@
 }
 
 .InfoBox {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,7 @@
 }
 
 .CardContainer {
-    margin-top: 30px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -159,7 +159,7 @@
 }
 
 .YummyPicture {
-    margin-top: 13px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
