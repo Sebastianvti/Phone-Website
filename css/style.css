@@ -1,4 +1,6 @@
-.Gradient {
+
+@media screen and (max-width: 440px) {
+    .Gradient {
     background: #50cc47;
     background: linear-gradient(
         180deg,
@@ -68,22 +70,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 7px;
     flex-grow: 1;
 }
 
-.Favorites img, .History img { 
-    object-fit: contain;
-    width: 12px;
-}
-
-.Favorites p, .History p { 
-    font-weight: 500;
-}
 
 .History {
     background-color: aliceblue;
     border-radius: 30px;
+}
+
+.History img, .Favorites img {
+    width: 17px;
+    object-fit: contain;
 }
 
 .YummyPicture {
@@ -163,16 +162,96 @@
     font-size: 10px;
 }
 
-.ProductInfo {
+.ProductContainer {
     display: flex;
     justify-content: center;
 }
 
-.ProductBox {
-    height: 60px;
-    width: 200px;
+.ProductMain {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 310px;
     border-radius: 10px;
     background-color: rgba(240, 255, 255, 0.45);
+}
+
+.ProductImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 4;
+}
+
+.ProductInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 6;
+}
+
+.ProductTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.ProductTitle p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ProductRatingMain {
+    width: 100%;
+    margin-left: 40px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.ProductRatingMain p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FA3E00;
+}
+
+.ProductRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FA3E00;
+    width: 75px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.ProductRating p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.ProductImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.ProductImage img {
+    width: 60px;
+    object-fit: contain;
+}
+
+.Offer {
+    background-color: rgba(240, 248, 255, 0.669);
+    /* width: 300px; */
+    height: 40px;
+    border-radius: 30px;
 }
 
 .ScanBox {
@@ -206,7 +285,6 @@ h3,h4 {
     font-family: "Libre Franklin";
     font-weight: 700;
 }
-@media screen and (max-width: 440px) {
 }
 
 @font-face {
