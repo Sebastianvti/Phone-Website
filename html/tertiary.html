@@ -1,13 +1,63 @@
-<html lang="nb">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tertiary</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-<body class="gradient">
-    <div class="Offer">
-        <p>Special offer expires in 04 : 30</p>
+  <body class="gradient">
+    <!-- Offer Container -->
+    <div class="OfferContainer">
+        <!-- Limited Time Offer -->
+      <div class="Offer">
+        <!-- Span er en klasse som er usynlig, hvis du gir span en klasse vil den ta koden fra klassen isteden for den orginale taggen -->
+        <p>Special offer expires in <span class="OrangeText">04 : 30</span></p>
+      </div>
+      <!-- Discount Percentage -->
+      <div class="Discount">
+        <h1><span class="OrangeText">35%</span> OFF</h1>
+        <p>on your favorite healthy products</p>
+      </div>
+      <!-- Decoration -->
+      <div class="GreenBox"></div>
     </div>
-</body>
+    <!-- Product Display -->
+    <div class="YummyPicture">
+      <img src="../img/chips.png" alt="chips" />
+      <div class="Barcode"><img src="../img/barcode.png" alt="barcode" /></div>
+    </div>
+    <!-- Cards -->
+    <div class="CardContainer">
+      <div class="Card">
+        <img src="../img/verified.png" alt="" />
+        <h3>Verified & Safe</h3>
+        <p>100% Secure</p>
+      </div>
+      <div class="Card">
+        <img src="../img/expand.png" alt="" />
+        <h3>Unlimited</h3>
+        <p>products scan</p>
+      </div>
+      <div class="Card">
+        <img src="../img/star.png" alt="" />
+        <h3>Personalized</h3>
+        <p>predictions</p>
+      </div>
+    </div>
+    <!-- Claim Container -->
+    <div class="ClaimContainer">
+      <div class="DiscountTextDivider">
+        <p>Just <span class="Strikethrough">$20.99</span></p>
+        <p><span class="GreenText">$19.99</span>/Year</p>
+      </div>
+      <p>Just $0.05 per day</p>
+      <div class="SecuredBy">
+        <img src="../img/verified.png" alt="">
+      <p>Cancel anytime secured by Apple</p>
+      </div>
+    </div>
+    <div class="ScanBoxWide">
+        <p>Claim Now</p>
+      </div>
+  </body>
 </html>
