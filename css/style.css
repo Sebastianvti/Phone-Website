@@ -83,14 +83,21 @@
     object-fit: contain;
 }
 
-.YummyPicture {
-    margin-top: 45px;
+.YummyPicture, .YummyPictureSpaced {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.YummyPicture img {
+.YummyPicture {
+    margin-top: 45px;
+}
+
+.YummyPictureSpaced {
+    margin-top: 60px;
+}
+
+.YummyPicture img, .YummyPictureSpaced img {
     object-fit: contain;
     width: 100%;
 }
@@ -107,14 +114,21 @@
     object-fit: contain;
 }
 
-.InfoBox {
-    margin-top: 50px;
+.InfoBox, .InfoBoxSpaced {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Info {
+.InfoBox {
+    margin-top: 50px;
+}
+
+.InfoBoxSpaced  {
+    margin-top: 65px;
+}
+
+.Info, .InfoTwo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +139,12 @@
     font-size: 22px;
 }
 
-.Info p {
+.InfoTwo h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Info p, .InfoTwo p {
     margin-top: -10px;
     text-align: center;
     color: #7b7878;
@@ -357,15 +376,13 @@
     color: #50cc47;;
 }
 
-.ScanBox, .ScanBoxWide {
+.ScanBox, .ScanBoxWide, .ScanBoxSpaced {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
-    width: 53%;
     background-color: #50cc47;
     border-radius: 20px;
-    height: 35px;
 }
 
 .ScanBox {
@@ -378,17 +395,23 @@
     width: 100%;
 }
 
+.ScanBoxSpaced {
+    margin-top: 10px;
+    height: 45px;
+    width: 40%;
+}
+
 .ScanBoxWide p {
     font-size: 18px;
     color: aliceblue;
 }
 
-.ScanBox p {
+.ScanBox p, .ScanBoxSpaced p {
     font-size: 14px;
     color: aliceblue;
 }
 
-.ScanBox img {
+.ScanBox img, .ScanBoxSpaced img {
     object-fit: contain;
     width: 17px;
 }
