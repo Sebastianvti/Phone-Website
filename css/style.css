@@ -236,8 +236,9 @@
 }
 
 .ProductTitle p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+    margin: 10;
 }
 
 .ProductRatingMain {
@@ -251,7 +252,7 @@
 
 .ProductRatingMain p {
     margin: 0;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     color: #FA3E00;
 }
